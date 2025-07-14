@@ -116,6 +116,7 @@ span{
     font-weight:600;
     transition: .5s ease;
 }
+/* About */
 .button:hover{
     box-shadow: none;
     background: var(--second-bg-color);
@@ -146,6 +147,7 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem ;
 }
+/* Service */
 .Services h2{
     margin-bottom: 5rem;
 }
@@ -155,12 +157,139 @@ span{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    transition: .5s ease;
 }
-.service-box .Services-container{
-    flex:1 1 30rem;
+ .services-container .service-box{
+    flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding:3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border:.2rem solifd var(--bg-color);
+    border:.2rem solid var(--bg-color);
+}
+.services-container .service-box:hover{
+    background: var(--main-color);
+    transition: scale(1.02);
+}
+.service-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.service-box h3{
+    font-size: 2.6rem;
+}
+.service-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+/* Projects */
+.projects{
+    background-color: var(--second-bg-color);
+}
+.projects h2{
+    margin-bottom: 4rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-container .project-box{
+    position: relative;
+    box-shadow: 0 0 1rem var(--main-color);
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    transition: .5s;
+}
+  
+.project-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.project-box:hover img{
+    transform: scale(1.1);
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), var(--main-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding:0 4rem ;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.project-box:hover .project-layer{
+    transform: translateY(0);
+}
+.project-layer h3{
+    font-size: 3rem;
+}
+.project-layer p{
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+}
+.project-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+.project-layer a i{
+    font-size: 2rem;
+    color:var(--second-bg-color);
+}
+/* contact section */
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    color:var(--text-color);
+    background-color: var(--second-bg-color);
+    border-radius: .8rem;
+    margin:.7rem 0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+}
+.input-box input,
+.input-box textarea{
+    padding: 1rem;
+    border: .2rem solid var(--bg-color);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    background: transparent;
+    color: var(--text-color);
+}
+.input-box textarea{
+    resize: none;
 }
