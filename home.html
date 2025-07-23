@@ -1,124 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Krish's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <script src="operations.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script src="operations.js" defer></script>
 </head>
 
 <body>
-    <!-- header -->
+    <!-- Header -->
     <header class="header">
         <a href="#" class="LOGO">Portfolio</a>
-        <i class='bxr  bx-menu-wider' class="menu-icon"></i>
+        <i class='bx bx-menu menu-icon' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#Home" class="Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Services">Services</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <!-- home layout -->
+
+    <!-- Home -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi, Its me.</h3>
+            <h3>Hi, It's me.</h3>
             <h1>Krish Kapoor</h1>
-            <h3>And I'm a
-                <span>Java Developer</span>
-            </h3>
+            <h3>And I'm a <span>Java Developer</span></h3>
             <p>Welcome to my portfolio! Here you can find all my latest projects and skills.</p>
             <div class="Social-media">
-                <a href="#"><i class='bx  bx-file-code'></i> </a>
-                <a href="#"><i class='bxr  bx-envelope-alt'></i> </a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i>  </a>
             </div>
             <a href="#" class="button">Download CV</a>
             <div class="home-image">
-                <img src="https://source.unsplash.com/tMHAmxLyzvA" alt="">
+                <img src="https://source.unsplash.com/tMHAmxLyzvA" alt="Profile">
             </div>
         </div>
     </section>
-    <!-- about section -->
+
+    <!-- About -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="https://source.unsplash.com/random/800x600" alt="">
+            <img src="https://source.unsplash.com/random/800x600" alt="About Image">
         </div>
         <div class="about-content">
-            <h2 class="heading">About <span></span></h2>
+            <h2 class="heading">About <span>Me</span></h2>
             <h3>Java Developer</h3>
             <p>I'm a passionate Java developer with experience in building dynamic web applications.</p>
             <a href="#" class="button">Read More</a>
         </div>
     </section>
-    <!-- services section -->
-    <section class="Services" id="Services">
+
+    <!-- Services -->
+    <section class="services" id="services">
         <h2 class="heading">Our <span>Services</span></h2>
-        <div class="service-container">
+        <div class="services-container">
             <div class="service-box">
-                <i class='bxr  bx-code-alt'></i>
+                <i class='bx bx-code-alt'></i>
                 <h3>Java Developer</h3>
-                <p>Building robust backend systems, crafting secure APIs, and developing desktop applications using Java
-                    and modern frameworks.</p>
+                <p>Building robust backend systems, crafting secure APIs, and developing desktop applications using Java and modern frameworks.</p>
                 <a href="#" class="button">Read More</a>
             </div>
             <div class="service-box">
-                <i class='bxr  bx-code-alt'></i>
+                <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <p>Creating responsive and dynamic websites using the latest technologies.</p>
                 <a href="#" class="button">Read More</a>
             </div>
             <div class="service-box">
-                <i class='bxr  bx-chart-bar-columns'></i>
+                <i class='bx bx-chart'></i>
                 <h3>Data Analyst</h3>
                 <p>Analyzing data to provide insights and support decision-making.</p>
                 <a href="#" class="button">Read More</a>
             </div>
         </div>
     </section>
-    <!-- projects section -->
+
+    <!-- Projects -->
     <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="project-container">
             <div class="project-box">
-                <img src="https://source.unsplash.com/random/800x600" alt="">
+                <img src="https://source.unsplash.com/random/800x600" alt="Project">
                 <div class="project-layer">
                     <p>Brief description of the project.</p>
                     <a href="#" class="button">View Project</a>
                 </div>
             </div>
-        </div>
-        <div class="project-box">
-            <img src="https://source.unsplash.com/random/800x600" alt="">
-            <div class="project-layer">
-
-                <h3>Domain-Whois-App</h3>
-                <p>Brief description of the project.</p>
-                <a href="#" class="button">View Project</a>
+            <div class="project-box">
+                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <div class="project-layer">
+                    <h3>Domain-Whois-App</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
             </div>
-        </div>
-        <div class="project-box">
-            <img src="https://source.unsplash.com/random/800x600" alt="">
-            <div class="project-layer">
-
-                <h3>Point Of Sale</h3>
-                <p>Brief description of the project.</p>
-                <a href="#" class="button">View Project</a>
+            <div class="project-box">
+                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <div class="project-layer">
+                    <h3>Point Of Sale</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
             </div>
-        </div>
-        <div class="project-box">
-            <img src="https://source.unsplash.com/random/800x600" alt="">
-            <div class="project-layer">
-
-                <h3>Spending Tracker</h3>
-                <p>Brief description of the project.</p>
-                <a href="#" class="button">View Project</a>
+            <div class="project-box">
+                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <div class="project-layer">
+                    <h3>Spending Tracker</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
             </div>
         </div>
     </section>
-    <!-- contact section -->
-     <section class="contact" id="Contact">
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <form action="#">
             <div class="input-box">
@@ -129,11 +131,20 @@
                 <input type="number" placeholder="Phone Number">
                 <input type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="button">
         </form>
-       
-     </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2025 Krish Kapoor. All rights reserved.</p>
+        </div>
+        <div class="footer-icon">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>
