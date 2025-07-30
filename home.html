@@ -5,11 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krish's Portfolio</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
     <script src="operations.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <style>
+        /* Smooth toggle animation */
+        #about-more,
+        .service-more {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,15 +41,16 @@
         <div class="home-content">
             <h3>Hi, It's me.</h3>
             <h1>Krish Kapoor</h1>
-            <h3>And I'm a <span>Java Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>Welcome to my portfolio! Here you can find all my latest projects and skills.</p>
             <div class="Social-media">
                 <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i>  </a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i> </a>
             </div>
             <a href="#" class="button">Download CV</a>
             <div class="home-image">
-                <img src="https://source.unsplash.com/tMHAmxLyzvA" alt="Profile">
+                <!-- Fixed to local image -->
+<img src="./images/profile.jpg" alt="Profile">
             </div>
         </div>
     </section>
@@ -47,13 +58,20 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="https://source.unsplash.com/random/800x600" alt="About Image">
+            <!-- Fixed to local image -->
+            <img src="images/about.jpg" alt="About Image">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Java Developer</h3>
             <p>I'm a passionate Java developer with experience in building dynamic web applications.</p>
-            <a href="#" class="button">Read More</a>
+            <div id="about-more">
+                <p>
+                    I specialize in backend systems, APIs, and have worked on multiple full-stack projects.
+                    I am also passionate about learning new technologies and growing in the software industry.
+                </p>
+            </div>
+            <a href="#" class="button" id="about-read-more">Read More</a>
         </div>
     </section>
 
@@ -64,20 +82,35 @@
             <div class="service-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Java Developer</h3>
-                <p>Building robust backend systems, crafting secure APIs, and developing desktop applications using Java and modern frameworks.</p>
-                <a href="#" class="button">Read More</a>
+                <p>Building robust backend systems, crafting secure APIs, and developing desktop applications using Java
+                    and modern frameworks.</p>
+                <div class="service-more">
+                    <p>I also develop enterprise-level applications and have experience with Spring Boot, Hibernate, and
+                        database integrations.</p>
+                </div>
+                <a href="#" class="button service-read-more">Read More</a>
             </div>
+
             <div class="service-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <p>Creating responsive and dynamic websites using the latest technologies.</p>
-                <a href="#" class="button">Read More</a>
+                <div class="service-more">
+                    <p>I work with modern frontend frameworks like React and backend stacks like Node.js for full-stack
+                        projects.</p>
+                </div>
+                <a href="#" class="button service-read-more">Read More</a>
             </div>
+
             <div class="service-box">
                 <i class='bx bx-bar-chart-alt'></i>
                 <h3>Data Analyst</h3>
                 <p>Analyzing data to provide insights and support decision-making.</p>
-                <a href="#" class="button">Read More</a>
+                <div class="service-more">
+                    <p>I use Python, SQL, and visualization tools like Power BI and Tableau to deliver data-driven
+                        insights.</p>
+                </div>
+                <a href="#" class="button service-read-more">Read More</a>
             </div>
         </div>
     </section>
@@ -89,32 +122,40 @@
             <div class="project-box">
                 <img src="https://source.unsplash.com/random/800x600" alt="Project">
                 <div class="project-layer">
+                    <h3>Portfolio Website</h3>
                     <p>Brief description of the project.</p>
-                    <a href="#" class="button">View Project</a>
+                    <a href="https://krish-portfolio.netlify.app" target="_blank" rel="noopener" class="button"
+                        title="View Portfolio Website"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
             <div class="project-box">
                 <img src="https://source.unsplash.com/random/800x600" alt="Project">
                 <div class="project-layer">
                     <h3>Domain-Whois-App</h3>
                     <p>Brief description of the project.</p>
-                    <a href="#" class="button">View Project</a>
+                    <a href="https://domain-whois-app.vercel.app/" target="_blank" rel="noopener" class="button"
+                        title="View Domain-Whois-App"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
             <div class="project-box">
                 <img src="https://source.unsplash.com/random/800x600" alt="Project">
                 <div class="project-layer">
                     <h3>Point Of Sale</h3>
                     <p>Brief description of the project.</p>
-                    <a href="#" class="button">View Project</a>
+                    <a href="https://github.com/krishxkapoor/Point-Of-Sale.git" target="_blank" rel="noopener"
+                        class="button" title="View Point Of Sale"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
             <div class="project-box">
                 <img src="https://source.unsplash.com/random/800x600" alt="Project">
                 <div class="project-layer">
                     <h3>Spending Tracker</h3>
                     <p>Brief description of the project.</p>
-                    <a href="#" class="button">View Project</a>
+                    <a href="https://github.com/krishxkapoor/SpendingTracker.git" target="_blank" rel="noopener"
+                        class="button" title="View Spending Tracker"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
@@ -147,5 +188,4 @@
         </div>
     </footer>
 </body>
-
 </html>

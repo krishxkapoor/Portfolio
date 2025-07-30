@@ -43,7 +43,9 @@ section {
     align-items: center;
     z-index: 100;
 }
-
+.header .sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
 .LOGO {
     font-size: 2.5rem;
     color: var(--text-color);
