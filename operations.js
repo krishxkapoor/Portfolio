@@ -71,17 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (aboutReadMore && aboutMoreText) {
         aboutReadMore.addEventListener("click", (e) => {
             e.preventDefault();
-            if (aboutMoreText.style.display === "none" || aboutMoreText.style.display === "") {
-                aboutMoreText.style.display = "block";
-                aboutReadMore.textContent = "Read Less";
-            } else {
-                aboutMoreText.style.display = "none";
-                aboutReadMore.textContent = "Read More";
-            }
+            aboutMoreText.classList.toggle("expanded");
+            aboutReadMore.textContent = aboutMoreText.classList.contains("expanded") ? "Read Less" : "Read More";
         });
     }
 
     // Services Section Read More/Less (vertical expand)
+    // (Restored previous code)
     const serviceReadMoreButtons = document.querySelectorAll(".service-read-more");
     serviceReadMoreButtons.forEach((btn) => {
         btn.addEventListener("click", (e) => {

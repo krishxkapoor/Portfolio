@@ -39,17 +39,19 @@
     <!-- Home -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi, It's me.</h3>
-            <h1>Krish Kapoor</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Welcome to my portfolio! Here you can find all my latest projects and skills.</p>
-            <div class="Social-media">
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i> </a>
+            <div class="home-text">
+                <h3>Hi, It's me.</h3>
+                <h1>Krish Kapoor</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>Welcome to my portfolio! Here you can find all my latest projects and skills.</p>
+                <div class="Social-media">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i> </a>
+                </div>
+                <a href="#" class="button">Download CV</a>
             </div>
-            <a href="#" class="button">Download CV</a>
             <div class="home-image">
-                <img src="./images/profile.jpg" alt="Profile">
+                <img src="../images/profile.jpg" alt="Profile">
             </div>
         </div>
     </section>
@@ -58,7 +60,7 @@
     <section class="about" id="about">
         <div class="about-img">
             <!-- Fixed to local image -->
-            <img src="images/about.jpg" alt="About Image">
+            <img src="../images/about.jpg" alt="About Image">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
@@ -119,7 +121,7 @@
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="project-container">
             <div class="project-box">
-                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <img src="../images/Coder.jpg" alt="Project">
                 <div class="project-layer">
                     <h3>Portfolio Website</h3>
                     <p>Brief description of the project.</p>
@@ -129,7 +131,7 @@
             </div>
 
             <div class="project-box">
-                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <img src="../images/Domain-Whois-App.jpg" alt="Project">
                 <div class="project-layer">
                     <h3>Domain-Whois-App</h3>
                     <p>Brief description of the project.</p>
@@ -139,7 +141,7 @@
             </div>
 
             <div class="project-box">
-                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <img src="../images/Point of Sale.jpg" alt="Project">
                 <div class="project-layer">
                     <h3>Point Of Sale</h3>
                     <p>Brief description of the project.</p>
@@ -149,7 +151,7 @@
             </div>
 
             <div class="project-box">
-                <img src="https://source.unsplash.com/random/800x600" alt="Project">
+                <img src="../images/Spending Tracker.jpg" alt="Project">
                 <div class="project-layer">
                     <h3>Spending Tracker</h3>
                     <p>Brief description of the project.</p>
@@ -163,18 +165,24 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="https://formspree.io/f/xkgzzvno" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="button">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="button">Send Message</button>
         </form>
+        <a
+           href="https://wa.me/917814034714?text=hello%20how%20are%20you"
+           target="_blank"
+           class="button"
+           style="background-color: #25D366; color: white; margin-top: 1rem;"
+         >
+           Message me on WhatsApp
+         </a>
+         <p style="margin-top: 0.5rem; color: #25D366; font-size: 1.2rem;">
+         </p>
     </section>
 
     <!-- Footer -->
